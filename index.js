@@ -16,6 +16,9 @@ app.use(express.static('./public'))
 
 // telling application to use middleware
 app.use(router);
+app.use((req,res)=>{
+  res.send(' <h1 style="text-align: center"> 404 page not found</h1>')
+})
 
 
 
